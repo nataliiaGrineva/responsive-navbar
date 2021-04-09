@@ -1,1 +1,1 @@
-[DEMO](https://nataliiagrineva.github.io/responsive-navbar/)
+[DEMO](https://nataliiagrineva.github.io/responsive-navbar)
