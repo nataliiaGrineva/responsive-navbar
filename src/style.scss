@@ -1,4 +1,125 @@
-h1 {
-  color: red;
-  background-color: blue;
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+}
+
+.nav_toggle {
+  display: none;
+  background-color: rgb(81, 206, 70);
+  border: none;
+  outline: none;
+}
+
+.fas{
+  color: white;
+}
+
+.links {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  margin: 0;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  //transition: var(--transition);;
+  }
+
+.links li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  &:visited {
+    color: black;
+  }
+}
+
+
+/* TOGGLE CLASS*/
+.show_links {
+ height: 70px;
+}
+
+.nav_center {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  height: 70px;
+  min-height: 70px;
+  background-color: violet;
+}
+
+.nav_header {
+  padding: 0 10px;
+  position: absolute;
+  width: calc(100vw - 20px);
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  align-items: center;
+}
+
+.links_social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+// @media screen and (min-width: 801px) {
+//   .links {
+//     height: 70px;
+//   }
+// }
+
+@media screen and (max-width: 800px) {
+  .links {
+    height: 0;
+    align-items: unset;
+    margin-top: 70px;
+  }
+
+  .nav_toggle {
+    display: block;
+  }
+
+  .links_social {
+    display: none;
+  }
+
+  .show_links {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav_center{
+    height: auto;
+  }
+
+
+}
+
+.text {
+  color: darkslategray;
+  text-align: center;
 }

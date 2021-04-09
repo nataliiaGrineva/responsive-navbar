@@ -32,10 +32,8 @@
     "parcel": "^1.12.4",
     "stylelint": "^13.6.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
-    }
+  "husky": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }
